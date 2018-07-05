@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fuctions JS</title>
+	<meta charset="utf-8">
+
+	<script type="text/javascript">
+			
+		function square(num){
+			return num*num; 
+		}
+		function even_odd(num){
+			while (num>1) num/2;
+			if(num==1) return "even";
+			else return "odd"; 
+		}
+		function factorial(num){
+			if(num>1){
+				factorial(num-1);
+				var sol=1;
+				sol=sol*num;
+			}
+			return sol;
+		}
+		function randomnumber(){
+			return Math.random;
+		}
+		function bigger(a,b,c,d){
+			var array = [a,b,c,d];
+			return array;
+		}
+
+		window.onload=function(){
+			square(2);
+			even(3);
+		}
+
+	</script>
+
+</head>
+<body>
+
+	<h1>FUNCTIOS</h1>
+	<hr>
+	<ul>
+		<li> Calculates the square of a given number: </li> <br>
+			Num=3<br>
+			<script type="text/javascript">
+				document.write( square(3));
+			</script>
+			<br><br>
+
+		<li>Check if a number is even or odd: </li> <br>
+			Num=5<br>
+			<script type="text/javascript">
+				document.write(square (num));
+			</script>
+			<br><br>
+
+		<li>Calculates the factorial of a number: </li><br>
+			Num=8<br>
+			<script type="text/javascript">
+				document.write(square (num));
+			</script>
+			<br><br>
+		<li>Returns a random number:</li><br>
+		<script type="text/javascript">
+				document.write(square (num));
+			</script>
+		<br>
+
+		<li>Returns which of 4 given numbers is the biggest:
+		 </li><br>
+			Nums= 1, 2, 3, 4, 5.<br>
+			<script type="text/javascript">
+				document.write(square (num));
+			</script>
+			<br><br>
+		<li>Call another function:</li><br>
+
+		<br><br><br>
+
+		<li>Uses console.log() to show the content of an array with the months of the year:</li> <br>	
+
+		<br><br><br>
+	</ul>
+</body>
+</html>

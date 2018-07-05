@@ -1,0 +1,79 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+#cuerpo{
+	margin-left: 6%;
+}
+
+
+
+.amunt > div {
+	display: inline-block;
+	margin-right: 25px;
+}
+.amunt > div > iframe{
+	display: flex;
+}
+.amunt > div > iframe:hover{
+
+	display: block;
+	transform: translateZ(0);
+	z-index:1;
+	transform: scale(2,2);
+}
+#titol{
+		font-family: "Courier New", Courier, serif;
+		font-size: 40px;
+		color:  #FFFFFF;
+		margin-left: 7px;
+		margin-top: -7px;
+
+}
+
+#fondo{
+	background-image: url(hola.png);
+	background-repeat: no-repeat;
+	background-size: 100vw 145px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#cara{
+	width: 115px;
+	margin-right: -20px;
+}
+
+.camp{
+	width: 200px;
+}
+
+#text{
+	width: 200px;
+	height: 45px;
+}
+
+#img{
+	width: 40px; 
+	margin-left: 20px; 
+	margin-top: 10px
+}
+
+.amunt{
+	display: flex;
+
+}
+
+.telmail{
+	font-family: "Courier New", Courier, serif;
+	font-weight: 20px;
+}
