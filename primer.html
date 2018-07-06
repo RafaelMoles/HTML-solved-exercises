@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">	
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>This is a different webpage</title>
+		<!-- We can also add comments -->
+	</head>
+	
+	<body>
+		<img src="logo-fib.png">
+		<hr> 
+
+		<h1>Big heading</h1>
+		<h2>Big heading</h2>
+		<h3>Big heading</h3>
+		<h4>Big heading</h4>
+		<h5>Big heading</h5>
+		<h6>Big heading</h6>
+
+		<img src="google.jpg" alt="Google" width="104" height="104" />
+		<!--Alt Surt quan no surt la imatge-->
+		<br>
+
+		<a href="https://www.google.com" target="_blank">Google</a>
+		<!-- _blank obre altre web-->
+
+		<img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Logo_UPC.svg" style="margin-left: 100px">
+
+		<img src="images/popcorn.png">
+
+		<br><br><br>
+		<br>
+		<!--br salt de linea-->
+
+		<span style="color:blue">Google logo</span>
+
+		<p>This is paragraph</p>
+		<span> This is text as well </span> 
+
+		<a href="index.html"> CLICK </a>
+	
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+		<form>
+			<input type="text" name="click" value="hey" placeholder="Nom i cognom">
+			<input type="submit" name="click" value="Enviar">
+		</form>
+		
+		<label for="color">Color: </label>
+		<input type="color" name="color" id="color" value="#2fb8d0">
+
+
+		<br><br><br><br><br>
+
+		<legend>Dog:</legend>
+		Email: <input type="email" name="email" placeholder="example@email.com" ><br>
+		Number: <input type="number" name="number" value="1" max="5"><br>
+		Size: <input type="range" name="range" value="4" step="2"><br>
+		Url: <input type="url" name="url" placeholder="http://www.google.com"><br>
+
+		<br><br><br><br>
+		
+		<form action="/action_page.php">
+			Best color:
+			<select name="colors">
+			<optgroup label="Cold">
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+			</optgroup>
+			<optgroup label="Warm">
+			<option value="red">Red</option>
+			<option value="yellow" selected>Yellow</option>
+			</optgroup>
+			</select>
+			<br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<br><br><br><br>
+
+		<form action="/action_page.php">
+			Best color:
+			<input list="colors" name="color">
+			<datalist id="colors">
+				<option value="Blue"></option>
+				<option value="Red"></option>
+				<option value="Yellow"></option>
+				<option value="Green"></option>
+			</datalist>
+			<br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<br><br><br><br>
+
+		<form action="/action_page.php">
+			<label for="male">Male: </label>
+			<input type="radio" name="gender" value="male" id="male" checked><br>
+			<label for="female">Female: </label>
+			<input type="radio" name="gender" value="female" id="female"><br>
+			<label for="other">Other: </label>
+			<input type="radio" name="gender" value="other" id="other"><br>
+			<input type="checkbox" name="gender2" value="NB"> Non-binary <br>
+			<input type="checkbox" name="gender3" value="AH"> Apache Helicopter <br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<br><br><br><br>
+		<fieldset>
+		<form action="/action_page.php">
+			Essay:
+			<textarea name="message" rows="10" cols="30">
+			You need to be careful with textareas because, for example, this line is one line break
+			from the start, so sometimes you are adding spaces or breaks without knowledge of it.
+			</textarea>
+			<br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<a href="#" style="margin-left:1050px">Anar al principi de la pàgina</a>
+		<a href="https://www.google.com" >Cerca a Google</a>
+		</fieldset>
+	</body>
+
+</html>
