@@ -3,9 +3,53 @@
 <head>
 	<meta charset="utf-8">
 	<title>MIX</title>
-	
+	<link rel="stylesheet" type="text/css" href="mix.css">
+
+	<script type="text/javascript">
+	var a;
+	var current = 0;
+
+	window.onload=function(){
+
+		a=document.getElementsByClassName("foto");
+
+		for (var i = a.length - 1; i >= 0; i--) {
+			a[i].style.display="none";
+		}
+		a[0].style.display="block";
+
+		setInterval(changeimg,500);
+	}
+
+	function changeimg(){
+		a[current].style.display="none";
+		current++;
+		if(current>a.length-1) current = 0;
+		a[current].style.display ="block"
+	}
+
+	document.getElementById("in").oninput=function(){
+		
+	}
+
+	</script>
 </head>
 <body>
-	
+
+	<header>
+		<div>
+			<img src="foto.jpg" class="foto">
+			<img src="hola.png" class="foto">
+			<img src="cara.jpg" class="foto">
+		</div>
+	</header>
+	<section>
+			<input id="inp1" type="text" name="">
+			<br><br>
+			<span id="result1"></span>
+	</section>
+	<footer>
+		
+	</footer>
 </body>
 </html>
