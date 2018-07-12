@@ -9,6 +9,7 @@
 	var a;
 	var current = 0;
 
+
 	window.onload=function(){
 
 		a=document.getElementsByClassName("foto");
@@ -18,7 +19,9 @@
 		}
 		a[0].style.display="block";
 
-		setInterval(changeimg,500);
+		setInterval(changeimg,4000);
+
+		setInterval(time,0);
 	}
 
 	function changeimg(){
@@ -28,20 +31,43 @@
 		a[current].style.display ="block"
 	}
 
-	document.getElementById("in").oninput=function(){
-		
-	}
+	function time(){
+
+	      var today = new Date();
+	      var h = today.getHours();
+	      var m = today.getMinutes();
+	      var s = today.getSeconds();
+	      m = checkTime(m);
+	      s = checkTime(s);
+	      document.getElementById('show').innerHTML =
+	      h + ":" + m + ":" + s ;
+	      var t = setTimeout(startTime, 500);
+	  }
+
+	  function checkTime(i) {
+	      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	      return i;
+	  }
+
+		document.getElementById("in").oninput=function(){
+			
+		}
+		$("#div1").html(data.films[1]);
 
 	</script>
 </head>
 <body>
 
 	<header>
-		<div>
-			<img src="foto.jpg" class="foto">
-			<img src="hola.png" class="foto">
-			<img src="cara.jpg" class="foto">
+		<div id="fotodiv">
+			<img src="img1.jpg" class="foto">
+			<img src="img2.jpg" class="foto">
+			<img src="img3.jpg" class="foto">
 		</div>
+		<div id="clock">
+			<span id="show"></span>
+		</div>
+
 	</header>
 	<section>
 			<input id="inp1" type="text" name="">
