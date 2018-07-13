@@ -1,0 +1,16 @@
+$textColor: green;
+div{
+	color:blue;
+
+	div{
+		color:black;
+	}
+
+	> p{
+		color: $textColor;
+	}
+
+	&.class1{
+		color: red;
+	}
+}
