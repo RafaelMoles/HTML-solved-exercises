@@ -22,6 +22,12 @@
 		setInterval(changeimg,4000);
 
 		setInterval(time,0);
+
+		document.getElementById("in").oninput=function(){
+			
+			var input= document.getElementById("in").value;
+			document.getElementById("res").innerHTML= input;
+		}
 	}
 
 	function changeimg(){
@@ -49,10 +55,8 @@
 	      return i;
 	  }
 
-		document.getElementById("in").oninput=function(){
-			
-		}
-		$("#div1").html(data.films[1]);
+		
+		<!-- $("#div1").html(data.films[1]) -->  
 
 	</script>
 </head>
@@ -70,9 +74,11 @@
 
 	</header>
 	<section>
-			<input id="inp1" type="text" name="">
-			<br><br>
-			<span id="result1"></span>
+			<br>
+			<input id="in" type="text" name="">
+			<br>
+			<br>
+			<span id="res"></span>
 	</section>
 	<footer>
 		
