@@ -1,1 +1,54 @@
-S
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(img/foto.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  display: flex;
+  text-align: center;
+}
+
+.current > svg > path {
+  fill: #182939;
+}
+
+.current > svg {
+  width: 25px;
+  height: 25px;
+}
+
+.cont{
+  height: 70vh;
+  width: 35vw;
+  margin: 100px auto;
+}
+
+.cont > button {
+  width: 100px;
+  height: 50px;
+}
+
+#faceimg{
+  border-radius: 25px;
+}
+
+.menu{
+  left: 17px;
+  position: fixed;
+  top: 25px;
+  z-index: 102;
+}
+
+.menu > div {
+  text-align: center;
+  width: 48px;
+  height: 48px;
+}
+
+.home,.login,.shop,.contact{
+  text-align: center;
+  width: 25px;
+  height: 25px;
+}

@@ -1,0 +1,62 @@
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(img/foto.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+}
+
+#t1{
+  color: white;
+  position: absolute;
+  top: 45vh;
+}
+
+#logo{
+  margin-top: 40vh;
+}
+
+#t2 {
+  color: white;
+  position: absolute;
+  top: 60vh;
+  font-family: 'Dosis', sans-serif;
+  font-size: 50px;
+}
+
+.current > svg > path {
+  fill: #182939;
+}
+
+.current > svg {
+  width: 25px;
+  height: 25px;
+}
+
+.menu{
+  left: 17px;
+  position: fixed;
+  top: 25px;
+  z-index: 102;
+}
+
+.menu > div {
+  text-align: center;
+  width: 48px;
+  height: 48px;
+}
+
+
+
+.home,.login,.shop,.contact{
+  text-align: center;
+  width: 25px;
+  height: 25px;
+}
