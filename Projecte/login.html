@@ -6,7 +6,32 @@
     <link rel="stylesheet" href="login.css">
     <link href="fonts/Dosis" rel="stylesheet">
     <link rel="stylesheet" href="fonts/bootstrap/css/bootstrap.css">
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="">
+
+    window.onload=function(){
+  		setInterval(time,0);
+  	}
+
+  	function time(){
+
+  	      var today = new Date();
+  	      var h = today.getHours();
+  	      var m = today.getMinutes();
+  	      var s = today.getSeconds();
+  	      m = checkTime(m);
+  	      s = checkTime(s);
+  	      document.getElementById('show').innerHTML =
+  	      h + ":" + m + ":" + s ;
+  	      var t = setTimeout(startTime, 500);
+  	  }
+
+  	  function checkTime(i) {
+  	      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  	      return i;
+  	  }
+
+
+    </script>
 
   </head>
   <body>
